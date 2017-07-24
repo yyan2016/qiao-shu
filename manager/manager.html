@@ -6,14 +6,76 @@
     <meta charset="utf-8">
     <meta http-equiv="content-type" content="text/html">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>后台管理</title>
+    <title>QS-后台管理</title>
     <link rel="stylesheet" href="../bootstrap-3.3.7/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="manager.css">
   </head>
   <body>
     <div class="header">
-      <p class="header-p">欢迎您！<span>root</span> <a href="">[退出]</a></p>
+      <p class="header-p">欢迎您！<span>root</span> <a class="header-a" href="">[退出]</a></p>
     </div>
 
+    <div class="nav-margin">
+      <ul class="nav nav-tabs">
+      <li role="presentation" class="active"><a href="#">全部文章</a></li>
+      <li role="presentation"><a href="#">写文章</a></li>
+  </ul>
+    </div>
+
+    <div id="all">
+      <table class="table table-bordered table-all">
+        <thead>
+          <tr>
+            <th>编号</th>
+            <th>书名</th>
+            <th>作者</th>
+            <th>概要</th>
+            <th>时间</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>编号</td>
+            <td>书名</td>
+            <td>作者</td>
+            <td>概要</td>
+            <td>时间</td>
+          </tr>
+          <tr>
+            <td>编号</td>
+            <td>书名</td>
+            <td>作者</td>
+            <td>概要</td>
+            <td>时间</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div>
+      <form class="first-form">
+        <div class="form-group">
+          <label for="exampleInputEmail1">书名</label>
+          <input type="text" class="form-control" id="exampleInputEmail1" placeholder="书名">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">作者</label>
+          <input type="text" class="form-control" id="exampleInputPassword1" placeholder="作者">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">概要</label>
+          <input type="text" class="form-control" id="exampleInputPassword1" placeholder="概要">
+        </div>
+        <div class="form-group">
+          <label>正文</label>
+          <textarea class="form-control" rows="5" placeholder="请输入正文"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">时间</label>
+          <input type="text" class="form-control" id="exampleInputPassword1" placeholder="时间">
+        </div>
+        <button type="submit" class="btn btn-default">提交</button>
+      </form>
+    </div>
   </body>
 </html>
