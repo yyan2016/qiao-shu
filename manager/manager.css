@@ -1,0 +1,12 @@
+.header{
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: #c0c0c0;
+  height: 40px;
+}
+.header-p{
+  float: right;
+  margin-right: 80px;
+  margin-top: 10px;
+}
